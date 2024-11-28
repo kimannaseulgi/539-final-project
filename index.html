@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Anna's Boba Shop</title>
+</head>
+
+<body>
+    <header>
+        <div class="skip"><a href="#main-content">Skip to Main Content</a></div>
+        <br>
+        <img class=logo src="images/logo.png" alt="Anna's Boba Shop Logo">
+        <nav class="nav">
+            <ul class="nav-menu">
+                <li><a class="active" href="index.html">Menu</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+            </ul>
+        </nav>
+        <br>
+        <h1>Anna's Boba Shop</h1>
+        <h2>Curated Teas & Notes</h2>
+    </header>
+
+    <main class="tea" id="main-content">
+        <div class="card" tabindex="0" role="button" onkeypress="handleKeyPress(event, this)" onclick="toggleCard(this)">
+            <header>
+                <img src="images/jasmine_green.png" alt="Color of Jasmine Green Tea">
+                <h3>Jasmine Green Tea</h3>
+                <h4>Floral, Light, Fresh</h4>
+            </header>
+            </li>
+            <div class="card-details">
+                <p>Jasmine is highly fragrant with floral and sweet notes. For an aromatic cup of warm tea, add 1 tbsp of honey to a mug of hot water. Steep 1 tea bag for 3 minutes before enjoying. Note: if oversteeped, use milk of choice to cut the strong and/or bitter flavor.</p>
+            </div>
+        </div>
+        <div class="card" tabindex="0" role="button" onkeypress="handleKeyPress(event, this)" onclick="toggleCard(this)">
+            <header>
+                <img src="images/matcha.png" alt="Color of Matcha">
+                <h3>Matcha</h3>
+                <h4>Earthy, Umami, Rich</h4>
+            </header>
+            </li>
+            <div class="card-details">
+                <p>Green tea powder, otherwise known as Matcha, is a caffeinated, earthy and umami rich tea. Using a chasen (Japanese traditional bamboo whisk) or a frother, mix desired amount of ceremonial grade Matcha and warm water (150-165 degrees F) until everything is well incorporated. Top off with more warm water or add milk and sweetener to transform it into a matcha latte.</p>
+            </div>
+        </div>
+        <div class="card" tabindex="0" role="button" onkeypress="handleKeyPress(event, this)" onclick="toggleCard(this)">
+            <header>
+                <img src="images/roasted_oolong.png" alt="Color of Roasted Oolong Tea">
+                <h3>Roasted Oolong Tea</h3>
+                <h4>Wood, Deep, Balanced</h4>
+            </header>
+            </li>
+            <div class="card-details">
+                <p>This darker roasted tea is delicious to drink as a milk tea or tea latte. Simply brew two tea bags with a cup of hot water. Once steeped and cooled, pour the tea concentrate over ice, simple syrup, and half and half. (For a tea latte, substitute half and half for 1 cup of milk.)</p>
+            </div>
+        </div>
+        <div class="card" tabindex="0" role="button" onkeypress="handleKeyPress(event, this)" onclick="toggleCard(this)">
+            <header>
+                <img src="images/black_tea.png" alt="Color of Black Tea">
+                <h3>Black Tea</h3>
+                <h4>Dark, Strong, Rounded</h4>
+            </header>
+            </li>
+            <div class="card-details">
+                <p>Earl Grey and English Breakfast Tea have deep, strong flavors. Enjoy black tea with sugar and cream after brewing the tea for 2-3 minutes.</p>
+            </div>
+        </div>
+        <div class="card" tabindex="0" role="button" onkeypress="handleKeyPress(event, this)" onclick="toggleCard(this)">
+            <header>
+                <img src="images/rock_tea.png" alt="Color of Rock Tea">
+                <h3>Rock Tea</h3>
+                <h4>Natural, Earthy, Mild</h4>
+            </header>
+            </li>
+            <div class="card-details">
+                <p>For a mild yet well-rounded drink, opt for Rock Tea. (My favorite is the <a href = "https://us.osulloc.com/products/pure-tea">Osulloc Volcanic Rock Tea</a> from South Korea.) After steeping 1 tea bag in a mug of hot water, enjoy it without any additions to experience the earthy flavor.</p>
+            </div>
+        </div>
+        <div class="card" tabindex="0" role="button" onkeypress="handleKeyPress(event, this)" onclick="toggleCard(this)">
+            <header>
+                <img src="images/alishan.png" alt="Color of Alishan Oolong Tea">
+                <h3>Alishan Oolong Tea</h3>
+                <h4>Cinnamon, Fragrant, Aromatic</h4>
+            </header>
+            </li>
+            <div class="card-details">
+                <p>Alishan, the "high mountains" in Taiwan, offer premium young oolong tea leaves that are unique to the Taiwanese mountains. Steep 2-5 grams of tea leaves in boiling hot water (185+ degrees F) for 3 minutes. Enjoy the soft, floral aromas of this High Mountain Oolong tea!</p>
+            </div>
+        </div>
+        <div class="card" tabindex="0" role="button" onkeypress="handleKeyPress(event, this)" onclick="toggleCard(this)">
+            <header>
+                <img src="images/genmaicha.png" alt="Color of Genmaicha">
+                <h3>Genmaicha</h3>
+                <h4>Roasted, Savory, Rice</h4>
+            </header>
+            </li>
+            <div class="card-details">
+                <p>This roasted brown rice and green tea combination is easy to sip on in the mornings or with meals due to the savory flavor. Steep 1 tea bag in boiling hot water for 2-3 minutes.</p>
+            </div>
+        </div>
+        <div class="card" tabindex="0" role="button" onkeypress="handleKeyPress(event, this)" onclick="toggleCard(this)">
+            <header>
+                <img src="images/hojicha.png" alt="Color of Hojicha">
+                <h3>Hojicha</h3>
+                <h4>Nutty, Mellow, Smooth</h4>
+            </header>
+            </li>
+            <div class="card-details">
+                <p>Hojicha, otherwise known as roasted green tea powder, is the less-caffeinated sister to Matcha. Whisk or froth desired amount of powder with hot water (around 170 degrees F). Add sugar and milk of choice to taste in order to enjoy this drink as a latte.</p>
+            </div>
+        </div>
+    </main>
+
+    <br>
+
+    <footer>
+        <img class=logo src="images/logo.png" alt="Anna's Boba Shop Logo">
+        <p><a href="index.html">Menu </a></p>
+        <p><a href="about_me.html">About Me </a></p>
+        <p>Copyright <img class=copyright src="images/copyright_white.png" alt="Copyright Symbol"> <span
+                id="year"></span> Anna Kim</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
