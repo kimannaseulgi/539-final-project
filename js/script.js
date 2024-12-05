@@ -1,3 +1,4 @@
+// expand card
 function toggleCard(card) {
 
     const cardDetails = card.querySelector(".card-details");
@@ -11,6 +12,7 @@ function toggleCard(card) {
     console.log("card expanded: ", card);
 };
 
+// keyboard access
 function handleKeyPress(event, element) {
     if (event.key === "Enter") {
         event.preventDefault();
