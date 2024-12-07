@@ -1,8 +1,10 @@
 body {
-    background-color: #F6F5E8;
+    background-color: #F6F5E8; /* browsers that don't support linear-gradient */
+    /* background-image: linear-gradient(to bottom right, #a8a08c, #ffffff); */
     color: #ffffff;
     margin: 0; /*removes default margin from "user agent stylesheet"*/
 }
+
 
 .skip a {
     background: white;
@@ -119,6 +121,13 @@ li {
 }
 
 
+/* header,
+nav,
+main,
+footer {
+    padding: 2em;
+} */
+
 .nav {
     text-align: center;
     font-size: 1rem;
@@ -228,16 +237,19 @@ footer p{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 1vh;
     padding: 2% 4%;
+    /* margin: 0.5em; adds optional margin */
     box-sizing: border-box; /* padding/margin are included in the width */
     position: relative;
     overflow: hidden;
     cursor: pointer;
     transition: max-height 0.3s ease, box-shadow 0.3s ease;
+    /* max-height: 10em; maxmimum width for larger screens */
 }
 
 .card.expanded{
     max-height: 100%;
     background-color: #ff0000;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .card-details{
@@ -258,8 +270,41 @@ footer p{
     width: 20%;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .card-details {
+        transition: none; /* disable card transition for reduced motion in the future if animation is defined */
+    }
+}
+
 
 @media screen and (min-width: 800px) {
+    /* html {
+        font-size: 125%;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    h4{
+        font-size: 1.75rem;
+        text-align: left;
+    }
+
+    p{
+        font-size: 1.125rem;
+        text-align: left;
+    } */
+
     .logo {
         width: 4%;
     }
@@ -279,6 +324,8 @@ footer p{
         display: flex;
         justify-content: center;
         align-items: flex-start;
+        /* font-size: 0.88rem; */
+        /* min-width: 100px; */
     }
 
     img {
@@ -315,6 +362,8 @@ footer p{
 
     .card{
         flex: 1 1 calc(25% - 2rem); /* flex-grow, flex-shrink, and flex-basis */
+        /* max-width: calc(25% - 2rem); */
+        /* height: 100%; sets height to look even but cards in same row are different sizes now */
         max-height: 100%;
         padding: 2%;
     }
